@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="pnlChange" prefHeight="770.0" prefWidth="886.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
     <children>
-        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #2D75E8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="130.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
                    <image>
@@ -32,9 +32,9 @@
             <children>
                 <TextField fx:id="email" layoutX="7.0" prefHeight="34.0" prefWidth="275.0" promptText="username or email" />
                 <PasswordField fx:id="password" layoutX="7.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="password" stylesheets="@../css/fullpackstyling.css" />
-                <Button fx:id="btnLogin" layoutX="145.0" layoutY="125.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="137.0" stylesheets="@../css/fullpackstyling.css" text="Sign in"  onAction="#handleButtonAction"/>
+                <Button fx:id="btnLogin" layoutX="145.0" layoutY="125.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" text="Sign in"  onAction="#handleButtonAction"/>
 
-                <Button fx:id="btnRegister" layoutX="4.0" layoutY="296.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" stylesheets="@../css/fullpackstyling.css" text="Sign up"  onAction="#handleButtonAction"/>
+                <Button fx:id="btnRegister" layoutX="4.0" layoutY="296.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" text="Sign up"  onAction="#handleButtonAction"/>
 
                 <Separator layoutY="270.0" prefHeight="7.0" prefWidth="275.0" />
                 <Label alignment="CENTER" layoutX="122.0" layoutY="262.0" prefHeight="23.0" prefWidth="31.0" style="-fx-background-color: #fff;" text="Or" textFill="#5b5a5a">
@@ -42,7 +42,7 @@
                         <Font name="Segoe UI" size="12.0" />
                     </font>
                 </Label>
-                <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+            <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
                     <font>
                         <Font name="Segoe UI" size="10.0" />
                     </font>

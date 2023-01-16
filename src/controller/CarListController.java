@@ -55,6 +55,10 @@ public class CarListController implements Initializable {
     private AnchorPane pnlChange;
 
     @FXML
+    private Button btnLogout;
+
+
+    @FXML
     private TextField fieldId;
 
     public void initialize(URL location, ResourceBundle resources) {
@@ -105,6 +109,7 @@ public class CarListController implements Initializable {
         if (event.getSource() == btnEdit) {
 
             try {
+                EditCarController.idCarEdit = Integer.parseInt(fieldId.getText())-1;
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("../view/EditCar.fxml"));
                 Parent root = loader.load();
@@ -130,7 +135,7 @@ public class CarListController implements Initializable {
                 ListData.deleteCar(Integer.parseInt(fieldId.getText())-1);
 
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("../view/CarList.fxml"));
+                loader.setLocation(getClass().getResource("../view/ListMobil.fxml"));
                 Parent root = loader.load();
 
                 pnlChange.getChildren().setAll(root);
@@ -150,7 +155,19 @@ public class CarListController implements Initializable {
                 e.printStackTrace();
             }
 
+    } else if (event.getSource() == btnLogout) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("../view/Login.fxml"));
+            Parent root = loader.load();
+
+            pnlChange.getChildren().setAll(root);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+        
     }
 
-}
-}
+

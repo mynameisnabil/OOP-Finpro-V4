@@ -55,7 +55,7 @@
          </children>
       </HBox>
       <ScrollPane layoutX="14.0" layoutY="152.0" prefHeight="520.0" prefWidth="846.0"
-         stylesheets="@../css/fullpackstyling.css">
+      style="-fx-background-color: #3A84C3;">
          <content>
             <VBox fx:id="pnItemsCar" prefHeight="518" prefWidth="844.0" spacing="5.0"
                style="-fx-background-color: WHITE;">
@@ -65,20 +65,26 @@
             </VBox>
          </content>
       </ScrollPane>
-      <Button fx:id="btnTransaksi" alignment="CENTER" graphicTextGap="22.0" layoutX="730" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="150" styleClass="button5" stylesheets="@../css/fullpackstyling.css" text="Go To Transaksi List" textFill="#fefe">
+      <Button fx:id="btnTransaksi" alignment="CENTER" graphicTextGap="22.0" layoutX="730" layoutY="700.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="150" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 10px; -fx-font-weight: bold; -fx-padding: 10px;" text="Go To Transaksi List" textFill="#fefe">
       </Button>
 
-      <Button fx:id="btnCreate" alignment="CENTER" layoutX="36.0" layoutY="700.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="100" styleClass="button5" stylesheets="@../css/fullpackstyling.css" text="Create" textFill="#fefe">
+      <Button fx:id="btnLogout" alignment="CENTER" graphicTextGap="22.0" layoutX="50.0" layoutY="700.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="150" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 10px; -fx-font-weight: bold; -fx-padding: 10px;" text="Log Out" textFill="#fefe">
+      </Button>
+
+      <Button fx:id="btnCreate" alignment="CENTER" layoutX="36.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="100" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" text="Create" textFill="#fefe">
       </Button>
       <TextField fx:id="fieldId" styleClass="inputid -fx-background-color: BLACK" prefWidth="70" prefHeight="42" layoutX="520"
-         layoutY="700.0" promptText="Enter Id"/>
-      <Button fx:id="btnEdit" onAction="#handleButtonAction"  layoutX="620" layoutY="700.0" alignment="CENTER"
-         styleClass="button5" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0"
-         prefWidth="100" textFill="#fefe" stylesheets="@../css/fullpackstyling.css" text="Edit">
+         layoutY="35.0" promptText="Enter Id"/>
+      <Button fx:id="btnEdit" onAction="#handleButtonAction"  layoutX="620" layoutY="35.0" alignment="CENTER"
+      style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" prefHeight="42.0"
+         prefWidth="100"  text="Edit">
       </Button>
-      <Button fx:id="btnDelete" onAction="#handleButtonAction" layoutX="750" layoutY="700.0" alignment="CENTER"
-         styleClass="button5" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0"
-         prefWidth="100" textFill="#fefe" stylesheets="@../css/fullpackstyling.css" text="Hapus">
+      <Button fx:id="btnDelete" onAction="#handleButtonAction" layoutX="750" layoutY="35.0" alignment="CENTER" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" prefHeight="42.0"
+         prefWidth="100" text="Hapus">
       </Button>
+      
+    
+ 
+      
    </children>
 </AnchorPane>
