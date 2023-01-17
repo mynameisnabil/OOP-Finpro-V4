@@ -3,46 +3,67 @@ package model;
 import java.util.ArrayList;
 
 public class ListDataTransaksi {
-    private static ArrayList<Transaksi<String, String, String, Integer, Integer, Integer>> list = new ArrayList<Transaksi<String, String, String, Integer, Integer, Integer>>();
+    private static ArrayList<Transaksi<String, String, String, String, Integer>> list = new ArrayList<Transaksi<String, String, String, String, Integer>>();
 
     public ListDataTransaksi(){
 
     }
 
-    public static void addTrans(String namaCustomer, String merek, String namaMobil, int price, int amount, int quantity){
-        list.add(new Transaksi<String, String, String, Integer, Integer, Integer>(namaCustomer, merek, namaMobil, price, amount , quantity));
+    public static void addTrans(String namaCustomer, String namaMobil, String Merek, String type, int price){
+        list.add(new Transaksi<String, String, String, String, Integer>(namaCustomer, namaMobil, Merek, type, price));
     }
 
-    //getter 
+    //getter
+    
+    public static int getsize(){
+        return list.size();
+    }
+    
     public static String getNamaCustomer(int index){
         return list.get(index).getNamaCustomer();
     }
 
-    public static String getMerek(int index){
-        return list.get(index).getmerek();
-    }
-
     public static String getNamaMobil(int index){
-        return list.get(index).getNamaMobil();
+        return list.get(index).getnamaMobil();
     }
 
-    public static int getPrice(int index){
-        return list.get(index).getPrice();
+    public static String getMerek(int index){
+        return list.get(index).getMerek();
     }
 
-    public static int getAmount(int index){
-        return list.get(index).getAmount();
+    public static String getType(int index){
+        return list.get(index).gettype();
     }
 
-    public static int  getQuantity(int index){
-        return list.get(index).getQuantity();
+    public static Integer getPrice(int index){
+        return list.get(index).getprice();
     }
 
-    //show transaksi
-    public static void showTransaksi() {
-        System.out.println("Nama Customer\tMerek\tNama Mobil\tPrice\tAmount\tQuantity");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(getNamaCustomer(i) + "\t" + getMerek(i) + "\t" + getNamaMobil(i) + "\t" + getPrice(i) + "\t" + getAmount(i) + "\t" + getQuantity(i));
-        }
+
+    //setter
+    public static void setNamaCustomer(int index, String namaCustomer){
+        list.get(index).setNamaCustomer(namaCustomer);
     }
+
+    public static void setNamaMobil(int index, String namaMobil){
+        list.get(index).setnamaMobil(namaMobil);
+    }
+
+    public static void setMerek(int index, String merek){
+        list.get(index).setMerek(merek);
+    }
+
+    public static void setType(int index, String type){
+        list.get(index).settype(type);
+    }
+
+    public static void setprice(int index, int price){
+        list.get(index).setprice(price);
+    }
+
+    public static void deletedata(int index){
+        list.remove(index);
+    }
+
+
 }

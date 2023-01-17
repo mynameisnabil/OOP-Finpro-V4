@@ -1,22 +1,20 @@
 package model;
 
 public class Transaksi
-<A, B, C, D, E, F> {
+<A, B, C, D, E> {
     A namaCustomer;
-    B merek;
-    C namaMobil;
-    D price;
-    E amount;
-    F quantity;
+    B namaMobil;
+    C Merek;
+    D type;
+    E Price;
 
 
-    public Transaksi(A namaCustomer, B merek, C namaMobil, D price, E amount, F quantity) {
+    public Transaksi(A namaCustomer, B namaMobil, C Merek, D type, E Price) {
         this.namaCustomer = namaCustomer;
-        this.merek = merek;
         this.namaMobil = namaMobil;
-        this.price = price;
-        this.amount = amount;
-        this.quantity = quantity;
+        this.Merek = Merek;
+        this.type = type;
+        this.Price = Price;
     }
 
     //getter
@@ -24,26 +22,42 @@ public class Transaksi
         return namaCustomer;
     }
 
-    public B getmerek() {
-        return merek;
-
+    public void setNamaCustomer(A namaCustomer){
+        this.namaCustomer = namaCustomer;
     }
 
-    public C getNamaMobil() {
+    public B getnamaMobil() {
         return namaMobil;
     }
 
-    public D getPrice() {
-        return price;
+    public void setnamaMobil(B namaMobil){
+        this.namaMobil = namaMobil;
     }
 
-    public E getAmount() {
-        return amount;
+    public C getMerek() {
+        return Merek;
     }
 
-    public F getQuantity() {
-        return quantity;
+    public void setMerek(C Merek){
+        this.Merek = Merek;
     }
+
+    public D gettype() {
+        return type;
+    }
+
+    public void settype(D type){
+        this.type = type;
+    }
+
+    public E getprice() {
+        return Price;
+    }
+
+    public void setprice(E price){
+        this.Price = Price;
+    }
+
 
 
 }

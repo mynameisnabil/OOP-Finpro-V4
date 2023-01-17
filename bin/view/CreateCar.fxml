@@ -62,11 +62,11 @@
                 </Label>
                     
 
-                <TextField fx:id="IdtxtNamaMobil" layoutX="550.0" layoutY="109.0" prefHeight="32.0" prefWidth="278.0" promptText="firstname" />
-                <TextField fx:id="IdtxtMerek" layoutX="550.0" layoutY="167.0" prefHeight="32.0" prefWidth="278.0" promptText="lastname" />
-                <TextField fx:id="IdtxtStock" layoutX="550.0" layoutY="226.0" prefHeight="32.0" prefWidth="278.0" promptText="email" />
-                <TextField fx:id="IdtxtType" layoutX="550.0" layoutY="284.0" prefHeight="32.0" prefWidth="278.0" promptText="email" />
-                <TextField fx:id="IdtxtHarga" layoutX="550.0" layoutY="342.0" prefHeight="32.0" prefWidth="278.0" promptText="email" />
+                <TextField fx:id="IdtxtNamaMobil" layoutX="550.0" layoutY="109.0" prefHeight="32.0" prefWidth="278.0" promptText="Nama Mobil" />
+                <TextField fx:id="IdtxtMerek" layoutX="550.0" layoutY="167.0" prefHeight="32.0" prefWidth="278.0" promptText="Merek" />
+                <TextField fx:id="IdtxtStock" layoutX="550.0" layoutY="226.0" prefHeight="32.0" prefWidth="278.0" promptText="Stok" />
+                <TextField fx:id="IdtxtType" layoutX="550.0" layoutY="284.0" prefHeight="32.0" prefWidth="278.0" promptText="Type" />
+                <TextField fx:id="IdtxtHarga" layoutX="550.0" layoutY="342.0" prefHeight="32.0" prefWidth="278.0" promptText="Harga" />
 
 
                 <Button fx:id="btnCreate" layoutX="550.0" layoutY="400.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="278.0" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" text="Save" onAction="#handleButtonAction"/>

@@ -6,6 +6,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import model.ListData;
+import model.ListDataTransaksi;
 import model.ListDataUser;
 
 public class App extends Application{
@@ -18,22 +19,31 @@ public class App extends Application{
         ListDataUser.addUser("hadad", "hadad", "customer");
 
         ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
+        ListData.addCar("Innova", "Toyota", "MPV", 10, 10000);
+        ListData.addCar("Xenia", "Daihatsu", "MPV", 10, 10000);
+        ListData.addCar("Alphard", "Toyota", "MPV", 10, 10000);
+        ListData.addCar("Vellfire", "Toyota", "MPV", 10, 10000);
+        ListData.addCar("Fortuner", "Toyota", "SUV", 10, 10000);
+        ListData.addCar("Pajero", "Mitsubishi", "SUV", 10, 10000);
+        ListData.addCar("Xpander", "Mitsubishi", "SUV", 10, 10000);
+        ListData.addCar("Xpander Cross", "Mitsubishi", "SUV", 10, 10000);
+        ListData.addCar("Pajero Sport", "Mitsubishi", "SUV", 10, 10000);
+        ListData.addCar("Outlander", "Mitsubishi", "SUV", 10, 10000);
+        ListData.addCar("Eclipse Cross", "Mitsubishi", "SUV", 10, 10000);
+        ListData.addCar("Civic", "Honda", "Sedan", 10, 10000);
 
+
+        ListDataTransaksi.addTrans("Joy","Civic","Honda","Sedan",10000);
+        ListDataTransaksi.addTrans("Naufal","Innova","Toyota","Sedan",10000);
+        ListDataTransaksi.addTrans("Nabil","Alphard","Toyota","Sedan",10000);
+        ListDataTransaksi.addTrans("Farid","Velfire","Toyota","Sedan",10000);
+        ListDataTransaksi.addTrans("Hadad","Fortuner","Toyota","Sedan",10000);
+        ListDataTransaksi.addTrans("Jodik","Civic","Honda","Sedan",10000);
+        ListDataTransaksi.addTrans("Rey","Civic","Honda","Sedan",10000);
+        ListDataTransaksi.addTrans("Jeje","Civic","Honda","Sedan",10000);
+    
+    
+    
     }
 
 
