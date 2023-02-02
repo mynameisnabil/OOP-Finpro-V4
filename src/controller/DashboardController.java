@@ -61,6 +61,9 @@ public class DashboardController implements Initializable{
     private Label BanyakMobil;
 
     @FXML
+    private Button btnCreate;
+
+    @FXML
     private Button btnCancel;
 
     @FXML
@@ -96,10 +99,6 @@ public class DashboardController implements Initializable{
                 nodes[i].setOnMouseExited(event -> {
                     nodes[j].setStyle("-fx-background-color : #FFF;");
                 });
-
-            
-
-
 
                 // set the data to the labels
                 IdMobil = (Label) nodes[i].lookup("#IdMobil");
@@ -141,7 +140,7 @@ public class DashboardController implements Initializable{
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        
+
         }else if (event.getSource() == btnEdit) {
             try {
                 EditTransaksiController.idTransaksiEdit = Integer.parseInt(fieldId.getText())-1;
@@ -159,6 +158,17 @@ public class DashboardController implements Initializable{
 
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("../view/Dashboard.fxml"));
+                Parent root = loader.load();
+
+                pnlChange.getChildren().setAll(root);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }else if
+        (event.getSource() == btnCreate){
+            try {
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("../view/CreateTransaksi.fxml"));
                 Parent root = loader.load();
 
                 pnlChange.getChildren().setAll(root);

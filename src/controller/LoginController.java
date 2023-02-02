@@ -60,24 +60,13 @@ public class LoginController implements Initializable{
                     try {
 
                         FXMLLoader loader = new FXMLLoader();
-                        loader.setLocation(getClass().getResource("../view/ListMobil.fxml"));
+                        loader.setLocation(getClass().getResource("../view/Dashboard.fxml"));
                         Parent root = loader.load();
                         pnlChange.getChildren().setAll(root);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                } else if (ListDataUser.getRole(index).equals("customer")) {
-                    try {
-                        userPageController.greeting = "Hello, " + ListDataUser.getUsername(index) + "! " + "Welcome to our shop";
-                        userPageController.idCustomer = index;
-                        FXMLLoader loader = new FXMLLoader();
-                        loader.setLocation(getClass().getResource("../view/userPage.fxml"));
-                        Parent root = loader.load();
-                        pnlChange.getChildren().setAll(root);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+                } 
             } else {
                 System.out.println("Wrong email or password");
             }

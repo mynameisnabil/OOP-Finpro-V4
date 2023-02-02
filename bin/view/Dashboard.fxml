@@ -15,7 +15,7 @@
    style="-fx-background-color: WHITE; -fx-background-radius: 10;"
    stylesheets="@../css/fullpackstyling.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
    <children>
-      <Label layoutX="36.0" layoutY="34.0" text="Transaksi   List" textFill="BLACK">
+      <Label layoutX="36.0" layoutY="34.0" text="Transaksi List" textFill="BLACK">
          <font>
             <Font size="26.0" />
          </font>
@@ -66,11 +66,11 @@
          </content>
       </ScrollPane>
       
-
       <Button fx:id="btnCancel" alignment="CENTER" graphicTextGap="22.0" layoutX="50.0" layoutY="700.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="150" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 10px; -fx-font-weight: bold; -fx-padding: 10px;" text="Go To List Car" textFill="#fefe">
       </Button>
 
-      
+      <Button fx:id="btnCreate" alignment="CENTER" layoutX="350.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="100" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px;" text="Create" textFill="#fefe">
+      </Button>
       <TextField fx:id="fieldId" styleClass="inputid -fx-background-color: BLACK" prefWidth="70" prefHeight="42" layoutX="520"
          layoutY="35.0" promptText="Enter Id"/>
       <Button fx:id="btnEdit" onAction="#handleButtonAction"  layoutX="620" layoutY="35.0" alignment="CENTER"

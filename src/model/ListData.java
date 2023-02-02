@@ -3,15 +3,15 @@ package model;
 import java.util.ArrayList;
 
 public class ListData {
-    private static ArrayList<Sedan> Cars = new ArrayList<Sedan>();
+    private static ArrayList<LuxuryCar> Cars = new ArrayList<LuxuryCar>();
 
     public static void addCar(String namaMobil, String merek, String Type, int stock, int price) {
-        Sedan car = new Sedan(namaMobil, merek, stock, price);
+        LuxuryCar car = new LuxuryCar(namaMobil, merek, stock, price);
         Cars.add(car);
 
     }
 
-    public ArrayList<Sedan> getSedans() {
+    public ArrayList<LuxuryCar> getSedans() {
         return Cars;
     }
 

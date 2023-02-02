@@ -16,31 +16,29 @@ public class App extends Application{
 
     public void setInitialValue() {
         ListDataUser.addUser("admin", "admin", "admin");
-        ListDataUser.addUser("hadad", "hadad", "customer");
 
-        ListData.addCar("Avanza", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Innova", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Xenia", "Daihatsu", "MPV", 10, 10000);
-        ListData.addCar("Alphard", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Vellfire", "Toyota", "MPV", 10, 10000);
-        ListData.addCar("Fortuner", "Toyota", "SUV", 10, 10000);
-        ListData.addCar("Pajero", "Mitsubishi", "SUV", 10, 10000);
-        ListData.addCar("Xpander", "Mitsubishi", "SUV", 10, 10000);
-        ListData.addCar("Xpander Cross", "Mitsubishi", "SUV", 10, 10000);
-        ListData.addCar("Pajero Sport", "Mitsubishi", "SUV", 10, 10000);
-        ListData.addCar("Outlander", "Mitsubishi", "SUV", 10, 10000);
-        ListData.addCar("Eclipse Cross", "Mitsubishi", "SUV", 10, 10000);
-        ListData.addCar("Civic", "Honda", "Sedan", 10, 10000);
+        ListData.addCar("Altis", "Toyota", "Luxury Car", 10, 10000);
+        ListData.addCar("Innova", "Toyota", "Luxury Car", 10, 10000);
+        ListData.addCar("Toyota 86", "Toyota", "Luxury Car", 10, 10000);
+        ListData.addCar("Alphard", "Toyota", "Luxury Car", 10, 10000);
+        ListData.addCar("Vellfire", "Toyota", "Luxury Car", 10, 10000);
+        ListData.addCar("Pajero", "Mitsubishi", "Luxury Car", 10, 10000);
+        ListData.addCar("Xpander", "Mitsubishi", "Luxury Car", 10, 10000);
+        ListData.addCar("Xpander Cross", "Mitsubishi", "Luxury Car", 10, 10000);
+        ListData.addCar("Pajero Sport", "Mitsubishi", "Luxury Car", 10, 10000);
+        ListData.addCar("Outlander", "Mitsubishi", "Luxury Car", 10, 10000);
+        ListData.addCar("Eclipse Cross", "Mitsubishi", "Luxury Car", 10, 10000);
+        ListData.addCar("Civic", "Honda", "Luxury Car", 10, 10000);
 
 
-        ListDataTransaksi.addTrans("Joy","Civic","Honda","Sedan",10000);
-        ListDataTransaksi.addTrans("Naufal","Innova","Toyota","Sedan",10000);
-        ListDataTransaksi.addTrans("Nabil","Alphard","Toyota","Sedan",10000);
-        ListDataTransaksi.addTrans("Farid","Velfire","Toyota","Sedan",10000);
-        ListDataTransaksi.addTrans("Hadad","Fortuner","Toyota","Sedan",10000);
-        ListDataTransaksi.addTrans("Jodik","Civic","Honda","Sedan",10000);
-        ListDataTransaksi.addTrans("Rey","Civic","Honda","Sedan",10000);
-        ListDataTransaksi.addTrans("Jeje","Civic","Honda","Sedan",10000);
+        ListDataTransaksi.addTrans("Joy","Civic","Honda","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Naufal","Innova","Toyota","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Nabil","Alphard","Toyota","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Farid","Velfire","Toyota","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Hadad","Fortuner","Toyota","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Jodik","Civic","Honda","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Rey","Civic","Honda","Luxury Car",10000);
+        ListDataTransaksi.addTrans("Jeje","Civic","Honda","Luxury Car",10000);
     
     
     
