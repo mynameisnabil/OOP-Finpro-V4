@@ -90,15 +90,6 @@ public class LoginController implements Initializable{
             } catch (Exception e) {
                 // TODO: handle exception
             }
-        } else if (event.getSource() == btnCustomer) {
-            try {
-                FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("../view/userPage.fxml"));
-                Parent root = loader.load();
-                pnlChange.getChildren().setAll(root);
-            } catch (Exception e) {
-                // TODO: handle exception
-            }
         }
     }
 
